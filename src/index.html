@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html ${htmlAttrs}>
+  <head>
+    <meta name="facebook-domain-verification" content="7gcqm9oj7gvlr2e3t5pahrz1bo2gzi" />
+    <script src="https://www.google.com/recaptcha/api.js?onload=CaptchaCallback&render=explicit" ></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAA-7efgRX-gUXStaH7_Hy2wsROqktEoIw" ></script>
+    ${head}
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+        w[l] = w[l] || []; w[l].push({
+          'gtm.start':
+            new Date().getTime(), event: 'gtm.js'
+        }); var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-P55XTKB');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Meta Pixel Code -->
+    <script>
+      !function (f, b, e, v, n, t, s) {
+        if (f.fbq) return; n = f.fbq = function () {
+          n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+        };
+        if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+        n.queue = []; t = b.createElement(e); t.async = !0;
+        t.src = v; s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s)
+      }(window, document, 'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '617006366260804');
+      fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=617006366260804&ev=PageView&noscript=1" /></noscript>
+    <!-- End Meta Pixel Code -->
+
+    <meta name="facebook-domain-verification" content="7gcqm9oj7gvlr2e3t5pahrz1bo2gzi" />
+  </head>
+  <body ${bodyAttrs}>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P55XTKB" height="0" width="0"
+        style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    ${app}
+    ${scripts}
+    <script type="text/javascript">
+      var CaptchaCallback = function() {
+        //console.log('CaptchaCallback')
+        // grecaptcha.render('RecaptchaField1', {'sitekey' : '6Lc_your_site_key'});
+        // grecaptcha.render('RecaptchaField2', {'sitekey' : '6Lc_your_site_key'});
+      };
+  </script>
+  </body>
+</html>
